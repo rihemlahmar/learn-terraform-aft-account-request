@@ -16,7 +16,7 @@ module "infra_account_test_01" {
 
   change_management_parameters = {
     change_requested_by = "rihem"
-    change_reason       = "provisioning a new infra test account"
+    change_reason       = "provisioning new infra test account"
   }
 
   custom_fields = {
