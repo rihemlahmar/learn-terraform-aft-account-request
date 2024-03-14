@@ -4,10 +4,10 @@ module "infra_account_test_01" {
   control_tower_parameters = {
     AccountEmail              = "infra-account-test-01@gmail.com"
     AccountName               = "infra-account-test-01"
-    ManagedOrganizationalUnit = "ou-6vtm-2mjw9h87"
+    ManagedOrganizationalUnit = "ou-6vtm-8lw52gek"
     SSOUserEmail              = "infra-account-test-01@gmail.com"
-    SSOUserFirstName          = "InfraTest2"
-    SSOUserLastName           = "TEST2"
+    SSOUserFirstName          = "InfraTest1"
+    SSOUserLastName           = "TEST1"
   }
 
   account_tags = {
