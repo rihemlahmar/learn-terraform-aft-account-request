@@ -23,5 +23,5 @@ module "infra_account_prod_01" {
     group = "prod"
   }
 
-  account_customizations_name = "infraProd"
+  #account_customizations_name = "infraProd"
 }
