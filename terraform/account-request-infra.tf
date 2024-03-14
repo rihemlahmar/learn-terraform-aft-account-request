@@ -1,27 +1,27 @@
-module "infra_account_prod_02" {
+module "infra_account_test_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "infra-account-prod-02@gmail.com"
-    AccountName               = "infra-account-prod-02"
+    AccountEmail              = "infra-account-test-01@gmail.com"
+    AccountName               = "infra-account-test-01"
     ManagedOrganizationalUnit = "ou-6vtm-2mjw9h87"
-    SSOUserEmail              = "infra-account-prod-02@gmail.com"
-    SSOUserFirstName          = "InfraProd2"
-    SSOUserLastName           = "PROD2"
+    SSOUserEmail              = "infra-account-test-01@gmail.com"
+    SSOUserFirstName          = "InfraTest2"
+    SSOUserLastName           = "TEST2"
   }
 
   account_tags = {
-    "infra-account-prod-01" = "infra-account-prod-02@gmail.com"
+    "infra-account-test-01" = "infra-account-test-01@gmail.com"
   }
 
   change_management_parameters = {
     change_requested_by = "rihem"
-    change_reason       = "provisioning a new infra prod account"
+    change_reason       = "provisioning a new infra test account"
   }
 
   custom_fields = {
-    group = "prod"
+    group = "non-prod"
   }
 
-  #account_customizations_name = "infraProd"
+  account_customizations_name = "Sandbox"
 }
