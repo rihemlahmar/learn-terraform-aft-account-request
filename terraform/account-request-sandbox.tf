@@ -26,20 +26,20 @@ module "sandbox_account_01" {
   account_customizations_name = "Sandbox"
 }
 
-module "sandbox_account_03" {
+module "sandbox_account_02" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "sandbox-account-03@gmail.com"
-    AccountName               = "sandbox-account-03"
+    AccountEmail              = "sandbox-account-02@gmail.com"
+    AccountName               = "sandbox-account-02"
     ManagedOrganizationalUnit = "ou-6vtm-z7id5vca"
-    SSOUserEmail              = "sandbox-account-03@gmail.com"
-    SSOUserFirstName          = "Sandbox03"
+    SSOUserEmail              = "sandbox-account-02@gmail.com"
+    SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
   }
 
   account_tags = {
-    "Sandbox_account_03" = "sandbox-account-03@gmail.com"
+    "Sandbox_account_02" = "sandbox-account-02@gmail.com"
   }
 
   change_management_parameters = {
