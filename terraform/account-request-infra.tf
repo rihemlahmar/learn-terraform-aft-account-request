@@ -6,8 +6,8 @@ module "infra_account_test_01" {
     AccountName               = "infra-account-test-01"
     ManagedOrganizationalUnit = "ou-6vtm-8lw52gek"
     SSOUserEmail              = "infra-account-test-01@gmail.com"
-    SSOUserFirstName          = "InfraTest1"
-    SSOUserLastName           = "TEST1"
+    SSOUserFirstName          = "Infra"
+    SSOUserLastName           = "AFT"
   }
 
   account_tags = {
@@ -23,5 +23,5 @@ module "infra_account_test_01" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Sandbox"
+  account_customizations_name = "Infra"
 }
