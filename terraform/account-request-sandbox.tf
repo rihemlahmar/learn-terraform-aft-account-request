@@ -34,7 +34,7 @@ module "sandbox_account_03" {
     AccountName               = "sandbox-account-03"
     ManagedOrganizationalUnit = "ou-6vtm-z7id5vca"
     SSOUserEmail              = "sandbox-account-03@gmail.com"
-    SSOUserFirstName          = "Sandbox"
+    SSOUserFirstName          = "Sandbox03"
     SSOUserLastName           = "AFT"
   }
 
