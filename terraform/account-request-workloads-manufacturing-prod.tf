@@ -4,7 +4,7 @@ module "workloads_manufacturing_prod" {
   control_tower_parameters = {
     AccountEmail              = "workloads_data_manufacturing_prod-account@gmail.com"
     AccountName               = "workloads_data_manufacturing_prod"
-    ManagedOrganizationalUnit = "Prod"
+    ManagedOrganizationalUnit = "Prod/Workloads"
     SSOUserEmail              = "workloads_data_manufacturing_prod@gmail.com"
     SSOUserFirstName          = "workloads_data_manufacturing_prod"
     SSOUserLastName           = "prod"
