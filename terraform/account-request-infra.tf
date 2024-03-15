@@ -23,6 +23,6 @@ module "network-test-account" {
     group = "non-prod"
   }
 
-  account_customizations_name = "Infra"
+  account_customizations_name = "sandbox"
 }
 
