@@ -4,7 +4,7 @@ module "workloads_data_lake_test" {
   control_tower_parameters = {
     AccountEmail              = "workloads_data_lake_test-account@gmail.com"
     AccountName               = "workloads_data_lake_test"
-    ManagedOrganizationalUnit = "Workloads"
+    ManagedOrganizationalUnit = "ou-6vtm-3e601ur7"
     SSOUserEmail              = "workloads_data_lake_test@gmail.com"
     SSOUserFirstName          = "workloads_data_lake_test"
     SSOUserLastName           = "AFT"
