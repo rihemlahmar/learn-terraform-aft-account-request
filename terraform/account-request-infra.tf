@@ -1,17 +1,17 @@
-module "network-test-account" {
+module "network-test" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "network-test-account@gmail.com"
-    AccountName               = "network-test-account"
-    ManagedOrganizationalUnit = "Infrastructure" 
-    SSOUserEmail              = "network-test-account@gmail.com"
+    AccountEmail              = "network-test@gmail.com"
+    AccountName               = "network-test"
+    ManagedOrganizationalUnit = "Test" 
+    SSOUserEmail              = "network-test@gmail.com"
     SSOUserFirstName          = "Infra"
     SSOUserLastName           = "AFT"
   }
 
   account_tags = {
-    "network-test-account" = "network-test-account@gmail.com"
+    "network-test" = "network-test@gmail.com"
   }
 
   change_management_parameters = {
