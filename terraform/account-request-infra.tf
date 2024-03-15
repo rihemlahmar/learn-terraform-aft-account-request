@@ -4,7 +4,7 @@ module "network-test-account" {
   control_tower_parameters = {
     AccountEmail              = "network-test-account@gmail.com"
     AccountName               = "network-test-account"
-    ManagedOrganizationalUnit = "Test/Infrastructure" 
+    ManagedOrganizationalUnit = "ou-6vtm-8lw52gek" 
     SSOUserEmail              = "network-test-account@gmail.com"
     SSOUserFirstName          = "Infra"
     SSOUserLastName           = "AFT"
