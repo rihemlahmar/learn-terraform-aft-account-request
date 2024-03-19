@@ -4,7 +4,7 @@ module "network-prod-account" {
   control_tower_parameters = {
     AccountEmail              = "network-prod-account@gmail.com"
     AccountName               = "network-prod-account"
-    ManagedOrganizationalUnit = "ou-6vtm-h9ghuud0" 
+    ManagedOrganizationalUnit = "Prod" 
     SSOUserEmail              = "network-prod-account@gmail.com"
     SSOUserFirstName          = "network"
     SSOUserLastName           = "prod"
