@@ -1,17 +1,17 @@
-module "shared-infra-prod-account" {
+module "shared-cicd-prod" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "shared-infra-prod-account@gmail.com"
-    AccountName               = "shared-infra-prod-account"
-    ManagedOrganizationalUnit = "Prod(ou-6vtm-8xv2vqfm)"
-    SSOUserEmail              = "shared-infra-prod-account@gmail.com"
+    AccountEmail              = "shared-cicd-prod-account@gmail.com"
+    AccountName               = "shared-cicd-prod-account"
+    ManagedOrganizationalUnit = "Prod(ou-6vtm-0gji2q28)"
+    SSOUserEmail              = "shared-cicd-prod-account@gmail.com"
     SSOUserFirstName          = "infra"
     SSOUserLastName           = "AFT"
   }
 
   account_tags = {
-    "infra-prod" = "shared-infra-prod-account@gmail.com"
+    "shared-cicd-prod-account@gmail.com" = "shared-cicd-prod-account@gmail.com"
   }
 
   change_management_parameters = {
