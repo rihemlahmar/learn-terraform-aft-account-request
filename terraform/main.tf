@@ -1,22 +1,22 @@
-module "workloads" {
+module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "workloads-test-account-01@gmail.com"
-    AccountName               = "workloads-test"
-    ManagedOrganizationalUnit = "ou-6vtm-znwwg2rw"
-    SSOUserEmail              = "workloads-test-account-01@gmail.com"
-    SSOUserFirstName          = "workloads-test"
+    AccountEmail              = "<ACCOUNT EMAIL>"
+    AccountName               = "sandbox-aft"
+    ManagedOrganizationalUnit = "Learn AFT"
+    SSOUserEmail              = "<SSO EMAIL>"
+    SSOUserFirstName          = "Sandbox"
     SSOUserLastName           = "AFT"
   }
 
   account_tags = {
-    "workloads-test-account-01@gmail.com" = "workloads-test-account-01@gmail.com"
+    "Learn Tutorial" = "AFT"
   }
 
   change_management_parameters = {
-    change_requested_by = "rihem"
-    change_reason       = "add workloads test account"
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform"
   }
 
   custom_fields = {
@@ -25,7 +25,3 @@ module "workloads" {
 
   account_customizations_name = "sandbox"
 }
-
-
-
-
