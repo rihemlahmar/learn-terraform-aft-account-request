@@ -4,7 +4,7 @@ module "shared-infra-prod-account" {
   control_tower_parameters = {
     AccountEmail              = "shared-infra-prod-account@gmail.com"
     AccountName               = "shared-infra-prod-account"
-    ManagedOrganizationalUnit = "Prod(ou-6vtm-8xv2vqfm)"
+    ManagedOrganizationalUnit = "Prod(Infrastructure)"
     SSOUserEmail              = "shared-infra-prod-account@gmail.com"
     SSOUserFirstName          = "infra"
     SSOUserLastName           = "AFT"
