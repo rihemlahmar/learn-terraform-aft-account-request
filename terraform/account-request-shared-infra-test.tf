@@ -4,7 +4,7 @@ module "shared-infra-test" {
   control_tower_parameters = {
     AccountEmail              = "shared-infra-test-account@gmail.com"
     AccountName               = "shared-infra-test-account"
-    ManagedOrganizationalUnit = "Test(ou-6vtm-8xv2vqfm)"
+    ManagedOrganizationalUnit = "Test(ou-6vtm-8lw52gek)"
     SSOUserEmail              = "shared-infra-test-account@gmail.com"
     SSOUserFirstName          = "shared-infra"
     SSOUserLastName           = "AFT"
@@ -28,5 +28,5 @@ module "shared-infra-test" {
 
 
 
-
+//ManagedOrganisationUnit = OU name ( parent OU ID )
 
