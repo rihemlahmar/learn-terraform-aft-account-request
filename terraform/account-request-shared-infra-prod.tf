@@ -1,4 +1,4 @@
-module "shared-infra-prod-account" {
+module "shared_infra_prod_account" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {

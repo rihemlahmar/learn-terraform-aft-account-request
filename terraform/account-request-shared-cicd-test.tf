@@ -4,7 +4,7 @@ module "shared_cicd_test_account" {
   control_tower_parameters = {
     AccountEmail              = "shared-cicd-test-account@gmail.com"
     AccountName               = "shared-cicd-test-account"
-    ManagedOrganizationalUnit = "Deployments"
+    ManagedOrganizationalUnit = "Test(ou-6vtm-0gji2q28)"
     SSOUserEmail              = "shared-cicd-test-account@gmail.com"
     SSOUserFirstName          = "infra"
     SSOUserLastName           = "AFT"
