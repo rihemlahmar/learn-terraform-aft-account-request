@@ -4,7 +4,8 @@ module "shared-cicd-prod" {
   control_tower_parameters = {
     AccountEmail              = "shared-cicd-prod-account@gmail.com"
     AccountName               = "shared-cicd-prod-account"
-    ManagedOrganizationalUnit = "Prod(ou-6vtm-r2gnwgt1)"
+    //ManagedOrganizationalUnit = "Prod(ou-6vtm-r2gnwgt1)"
+    ManagedOrganizationalUnit = "Deployments"
     SSOUserEmail              = "shared-cicd-prod-account@gmail.com"
     SSOUserFirstName          = "infra"
     SSOUserLastName           = "AFT"
