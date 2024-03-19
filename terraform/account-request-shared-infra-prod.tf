@@ -4,7 +4,7 @@ module "shared-infra-prod-account" {
   control_tower_parameters = {
     AccountEmail              = "shared-infra-prod-account@gmail.com"
     AccountName               = "shared-infra-prod-account"
-    ManagedOrganizationalUnit = "Prod(ou-6vtm-8xv2vqfm)"
+    ManagedOrganizationalUnit = "Prod(ou-6vtm-h9ghuud0)"
     SSOUserEmail              = "shared-infra-prod-account@gmail.com"
     SSOUserFirstName          = "infra"
     SSOUserLastName           = "AFT"
@@ -40,6 +40,12 @@ module "shared-infra-prod-account" {
 //prod(Infra ID)
 //prod(Infrastructure)
 //prod(prod ID)
+
+//3
+//prod(Infra ID)
+//prod(prod ID)
+
+
 
 
 //Enrolling AFT-Provisioned Account in a Child OU
