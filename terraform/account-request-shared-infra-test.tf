@@ -4,7 +4,7 @@ module "shared-infra-test" {
   control_tower_parameters = {
     AccountEmail              = "shared-infra-test-account@gmail.com"
     AccountName               = "shared-infra-test-account"
-    ManagedOrganizationalUnit = "Test(ou-6vtm-8xv2vqfm)"
+    ManagedOrganizationalUnit = "Test(ou-6vtm-8lw52gek)"
     SSOUserEmail              = "shared-infra-test-account@gmail.com"
     SSOUserFirstName          = "shared-infra"
     SSOUserLastName           = "AFT"
@@ -32,5 +32,11 @@ module "shared-infra-test" {
 //ManagedOrganisationUnit = OU name ( child OU ID )
 
 //Test(Infrastructure)
+//Test(Infra ID)
 //Test(Test ID)
 
+//Enrolling AFT-Provisioned Account in a Child OU
+//https://www.reddit.com/r/Terraform/comments/1bf9ia0/enrolling_aftprovisioned_account_in_a_child_ou/
+
+//Onboarding account requires two steps to move to different OU:
+//https://github.com/aws-ia/terraform-aws-control_tower_account_factory/issues/374
