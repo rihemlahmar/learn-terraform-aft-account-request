@@ -1,4 +1,4 @@
-module "shared_infra_prod_account" {
+module "network_prod_account" {
   source = "./modules/aft-account-request"
 
 //Enrolling AFT-Provisioned Account in a Child OU
@@ -8,16 +8,16 @@ module "shared_infra_prod_account" {
 //https://github.com/aws-ia/terraform-aws-control_tower_account_factory/issues/374
 
   control_tower_parameters = {
-    AccountEmail              = "shared-infra-prod-account@gmail.com"
-    AccountName               = "shared-infra-prod-account"
+    AccountEmail              = "network_prod_account@gmail.com"
+    AccountName               = "network_prod_account"
     ManagedOrganizationalUnit = "Prod(ou-6vtm-8xv2vqfm)"
-    SSOUserEmail              = "shared-infra-prod-account@gmail.com"
-    SSOUserFirstName          = "infra"
+    SSOUserEmail              = "network_prod_account@gmail.com"
+    SSOUserFirstName          = "network"
     SSOUserLastName           = "AFT"
   }
 
   account_tags = {
-    "infra-prod" = "shared-infra-prod-account@gmail.com"
+    "network_prod_account" = "network_prod_account@gmail.com"
   }
 
   change_management_parameters = {
